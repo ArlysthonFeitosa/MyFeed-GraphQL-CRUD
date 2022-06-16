@@ -120,6 +120,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.3"
+  dart_websocket:
+    dependency: transitive
+    description:
+      name: dart_websocket
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   dio:
     dependency: "direct main"
     description:
@@ -127,6 +134,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.6"
+  either_dart:
+    dependency: transitive
+    description:
+      name: either_dart
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.4"
   fake_async:
     dependency: transitive
     description:
@@ -160,20 +174,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
-  flutter_modular:
-    dependency: "direct main"
-    description:
-      name: flutter_modular
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "5.0.3"
-  flutter_modular_annotations:
-    dependency: transitive
-    description:
-      name: flutter_modular_annotations
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -186,8 +186,22 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
-  http_mock_adapter:
+  hasura_connect:
     dependency: "direct main"
+    description:
+      name: hasura_connect
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0+2"
+  http:
+    dependency: transitive
+    description:
+      name: http
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.13.4"
+  http_mock_adapter:
+    dependency: "direct dev"
     description:
       name: http_mock_adapter
       url: "https://pub.dartlang.org"
@@ -243,26 +257,12 @@ packages:
     source: hosted
     version: "1.7.0"
   mockito:
-    dependency: "direct main"
+    dependency: "direct dev"
     description:
       name: mockito
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.2.0"
-  modular_core:
-    dependency: transitive
-    description:
-      name: modular_core
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.3+1"
-  modular_interfaces:
-    dependency: transitive
-    description:
-      name: modular_interfaces
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.0.2"
   nested:
     dependency: transitive
     description:
@@ -338,6 +338,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  string_validator:
+    dependency: transitive
+    description:
+      name: string_validator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.0"
   term_glyph:
     dependency: transitive
     description:
@@ -359,6 +366,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.1"
+  uuid:
+    dependency: transitive
+    description:
+      name: uuid
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.6"
   vector_math:
     dependency: transitive
     description:

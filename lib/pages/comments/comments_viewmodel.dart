@@ -20,7 +20,7 @@ class CommentsViewmodel extends ChangeNotifier {
   TextEditingController newCommentFieldController = TextEditingController();
   TextEditingController editCommentFieldController = TextEditingController();
 
-  int _page = 1;
+  int _offset = 0;
   final int _limit = 5;
   bool reachedMax = false;
   List<CommentModel> comments = [];
@@ -83,14 +83,14 @@ class CommentsViewmodel extends ChangeNotifier {
   }
 
   Future<void> refreshData() async {
-    _page = 1;
+    _offset = 1;
     reachedMax = false;
     comments.clear();
     fetchComments();
   }
 
-  void incrementPage() {
-    _page++;
+  void incrementOffset() {
+    _offset += _limit;
   }
 
   Future<String?> fetchComments() async {
@@ -99,10 +99,10 @@ class CommentsViewmodel extends ChangeNotifier {
       List<CommentModel> commentsResponse = await postsRepository.getCommentsFromPost(
         postId: postModel.postId,
         limit: _limit,
-        page: _page,
+        offset: _offset,
       );
 
-      incrementPage();
+      incrementOffset();
 
       if (commentsResponse.isEmpty) {
         reachedMax = true;

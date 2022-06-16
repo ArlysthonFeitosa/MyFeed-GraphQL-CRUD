@@ -34,10 +34,6 @@ class PostComponent extends StatelessWidget {
           ),
           Row(
             children: [
-              CounterComponent(
-                count: postModel.comments.length,
-                icon: const Icon(Icons.comment_sharp),
-              ),
               const Expanded(child: SizedBox()),
               TextButton(
                 onPressed: () {

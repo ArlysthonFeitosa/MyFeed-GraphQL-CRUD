@@ -46,18 +46,18 @@ class CommentModel {
       'avatar': ownerAvatarURL,
       'username': ownerUsername,
       'content': content,
-      'createdAt': createdAt.millisecondsSinceEpoch,
+      'createdAt': '${createdAt.year}-${createdAt.month}-${createdAt.day}',
     };
   }
 
   factory CommentModel.fromMap(Map<String, dynamic> map) {
     return CommentModel(
-      commentId: map['id'],
-      postId: map['postId'] as String,
+      commentId: map['id'].toString(),
+      postId: map['postId'].toString(),
       ownerAvatarURL: map['avatar'] as String,
       ownerUsername: map['username'] as String,
       content: map['content'] as String,
-      createdAt: DateTime.fromMillisecondsSinceEpoch(map['createdAt']),
+      createdAt: DateTime.parse(map['createdAt']),
     );
   }
 

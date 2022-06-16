@@ -12,7 +12,7 @@ class FeedViewmodel extends ChangeNotifier {
   }
 
   bool reachedMax = false;
-  int _page = 1;
+  int _offset = 0;
   final int _limit = 5;
   List<PostModel> posts = [];
   final ScrollController scrollController = ScrollController();
@@ -26,11 +26,11 @@ class FeedViewmodel extends ChangeNotifier {
   }
 
   void incrementPage() {
-    _page++;
+    _offset += _limit;
   }
 
   Future<void> refreshData() async {
-    _page = 1;
+    _offset = 0;
     reachedMax = false;
     posts.clear();
     fetchPosts();
@@ -40,7 +40,7 @@ class FeedViewmodel extends ChangeNotifier {
     if (reachedMax) return null;
     try {
       List<PostModel> postsResponse = await postsRepository.getAllPosts(
-        page: _page,
+        offset: _offset,
         limit: _limit,
       );
 
