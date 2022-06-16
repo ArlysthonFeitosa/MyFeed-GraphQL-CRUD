@@ -1,6 +1,8 @@
 # MyFeed
 
-Este aplicativo foi criado para treinar CRUD com API REST (Get, Post, Put, Delete).
+Este aplicativo foi criado para treinar CRUD com API REST (Get, Post, Put, Delete). <br/>
+
+##### Obs: Por motivos de segurança, esse aplicativo não está mais hospedado
 
 ## Hasura + Heroku
 
