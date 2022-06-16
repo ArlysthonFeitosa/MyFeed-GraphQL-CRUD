@@ -1,7 +1,7 @@
-import 'package:dio/dio.dart';
+
 import 'package:flutter/material.dart';
 import 'package:hasura_connect/hasura_connect.dart';
-import 'package:myfeed/app/api/api_info.dart';
+import 'package:myfeed/app/api/hasura_info.dart';
 import 'package:myfeed/app/repositories/posts_repository.dart';
 import 'package:myfeed/app/services/hasura_service.dart';
 import 'package:myfeed/pages/feed/feed_page.dart';

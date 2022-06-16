@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:myfeed/app/api/api_info.dart';
+import 'package:myfeed/app/api/hasura_info.dart';
 import 'package:myfeed/app/exceptions/exceptions.dart';
 import 'package:myfeed/app/interfaces/repository/posts_repository_interface.dart';
 import 'package:myfeed/app/interfaces/services/hasura_service_interface.dart';

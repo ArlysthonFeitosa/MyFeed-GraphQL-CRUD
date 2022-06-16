@@ -1,21 +1,7 @@
 import 'package:myfeed/app/models/comment_model.dart';
 
-String hasuraBaseURL = 'https://myfeed.hasura.app/v1/graphql';
-String adminSecret = 'BuTyaLl6FoxqCt1kTywEIUNyPtMUpgfxUJFdowAsrOttbby1j3SgTvsN281vEp8i';
-
-//String postsEndpoint({int? page, int? limit}) {
-//  if (page == null && limit == null) return '$baseURL/posts';
-//  return '$baseURL/posts?page=$page&limit=$limit';
-//}
-//
-//String commentsFromPostEndpoint({required String postId, int? page, int? limit}) {
-//  if (page == null && limit == null) return '$baseURL/posts/$postId/comments';
-//  return '$baseURL/posts/$postId/comments?page=$page&limit=$limit&orderby=createdAt&order=desc';
-//}
-//
-//String createCommentEndpoint({required String postId}) => '$baseURL/posts/$postId/comments';
-//String updateCommentEndpoint({required String postId, required String commentId}) => '$baseURL/posts/$postId/comments/$commentId';
-//String deleteCommentEndpoint({required String postId, required String commentId}) => '$baseURL/posts/$postId/comments/$commentId';
+String hasuraBaseURL = '{replace with your base url}';
+String adminSecret = '{replace with your admin key}';
 
 String postsQuery({int? offset, int? limit}) {
   if (offset == null && limit == null) {

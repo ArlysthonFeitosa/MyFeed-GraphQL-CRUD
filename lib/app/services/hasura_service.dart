@@ -1,5 +1,5 @@
 import 'package:hasura_connect/hasura_connect.dart';
-import 'package:myfeed/app/api/api_info.dart';
+import 'package:myfeed/app/api/hasura_info.dart';
 import 'package:myfeed/app/interfaces/services/hasura_service_interface.dart';
 
 class HasuraService implements IHasuraService {

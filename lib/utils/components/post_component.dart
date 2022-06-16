@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myfeed/app/models/post_model.dart';
 import 'package:myfeed/pages/comments/comments_args.dart';
-import 'package:myfeed/utils/components/counter_component.dart';
 import 'package:myfeed/utils/components/user_header_component.dart';
 
 class PostComponent extends StatelessWidget {
