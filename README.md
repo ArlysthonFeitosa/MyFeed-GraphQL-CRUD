@@ -8,8 +8,6 @@ Este aplicativo foi criado para treinar CRUD com API REST (Get, Post, Put, Delet
 
 Nessa versão do aplicativo eu usei o Hasura para fazer as requisições com GraphQL e o heroku para hospedar o PostgreSQL
 
-- [MockAPI Docs](https://mockapi.io/docs)
-
 ## Serviço do Hasura
 - [Hasura Connect](https://pub.dev/packages/hasura_connect)
 
